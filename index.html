@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/homestyle.css">
+    <script src="https://kit.fontawesome.com/6c895689b6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+      <!------------------- navbar section ------------------>
+
+        <nav class="navbar navbar-expand-lg bg-$cyan-300">
+            <div class="container-fluid">
+              <a class="navbar-brand text-warning" href="#">CODEWORLD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-warning fs-5" aria-current="page" href="homepage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-warning fs-5" href="about.html" target="blank">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-warning fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TOPICS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">TECHNOLOGY</a></li>
+                      <li><a class="dropdown-item" href="#">DEVELOPMENT</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">SUPPORT</a></li>
+                      <li><a class="dropdown-item" href="..." >CONTACT</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-warning fs-5" href="contact.html" target="blank">CONTACT</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                        <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</div>
+                        <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SIGNUP</div>
+                    </div>
+              </div>
+            </div>
+          </nav>
+
+      
+      <!--Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModal">LOGIN TO CODEWORLD</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- signup Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModal">CREATE AN ACCOUNT</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="mb-3">
+                                    <label for="exampleInputNAME" class="form-label">ENTER NAME</label>
+                                    <input type="input" class="form-control" id="exampleInputNAME">
+                                  </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                    <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cexampleInputPassword1">
+                                  </div>
+                          </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!------------------- CAROUSEL section ------------------>
+          
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item size active">
+                <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\fabio-oyXis2kALVg-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-danger">
+                  <h2>WELCOME TO CODE WORLD</h2>
+                  <p class="fs-2 text-warning">LEARN,PRACTICE,IMPLEMENT. IMMERSE IN WORLD OF COMPUTERS</p>
+                  <button class="btn btn-warning">TECHNOLOGY</button>
+                  <button class="btn btn-success">MACHINE LEARNING</button>
+                  <button class="btn btn-danger">DATA SCIENCE</button>
+                </div>
+              </div>
+              <div class="carousel-item size">
+                <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\andras-vas-Bd7gNnWJBkU-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-danger">THE BEST PLATFORM TO ADVANCE</h2>
+                    <p class="fs-2 text-primary">BE FUTURE READY WITH OUR COURSES</p>
+                    <button class="btn btn-warning">TECHNOLOGY</button>
+                    <button class="btn btn-success">MACHINE LEARNING</button>
+                    <button class="btn btn-danger">DATA SCIENCE</button>
+                </div>
+              </div>
+              <div class="carousel-item size">
+                <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\image2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-danger">WELCOME TO CODE WORLD</h2>
+                    <p class="fs-2 text-dark">LEARN,PRACTICE,IMPLEMENT. IMMERSE IN WORLD OF COMPUTERS</p>
+                    <button class="btn btn-warning">TECHNOLOGY</button>
+                    <button class="btn btn-success">MACHINE LEARNING</button>
+                    <button class="btn btn-danger">DATA SCIENCE</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!------------------- CARDS section ------------------>
+
+         <div class="container">
+             <div class="row my-4">
+                 <div class="col-sm-12 col-md-6 col-lg-4">
+                     <div class="card">
+                         <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\web.jpg" alt="Web Design" class="card-img-top">
+                         <div class="card-body">
+                             <h5 class="card-title fs-4 text-danger">WEB DESIGN</h5>
+                             <p class="card-text">
+                                 One of the most demanded and highest paying fields out their. Come and join,let the journey begin.
+                             </p>
+                             <a href="#" class="btn btn-primary">START LEARNING</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-4">
+                     <div class="card img3">
+                        <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\python3.jpg" alt="PYTHON" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 text-danger">PYTHON COURSE</h5>
+                            <p class="card-text">
+                                One of the most demanded language in the industry as of now. Come and join,let the journey begin.
+                            </p>
+                            <a href="#" class="btn btn-primary">START LEARNING</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\app.jpg" alt="Web Design" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4 text-danger">APP DEVELOPMENT</h5>
+                                <p class="card-text">
+                                    One of the highest paying fields out their in todays age. Come and join,let the journey begin.
+                                </p>
+                                <a href="#" class="btn btn-primary">START LEARNING</a>
+                            </div>
+                        </div>
+                 </div>
+             </div>
+             <div class="row my-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\ai.jpg" alt="Web Design" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 text-danger">ARTIFICIAL INTELLIGENCE</h5>
+                                <p class="card-text">
+                                    One of the fastest growing fields out their. Come and join,let the journey begin.
+                                </p>
+                                <a href="#" class="btn btn-primary">START LEARNING</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card img3">
+                           <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\ml.jpg" alt="PYTHON" class="card-img-top">
+                           <div class="card-body">
+                               <h5 class="card-title fs-5 text-danger">MACHINE LEARNING</h5>
+                               <p class="card-text">
+                                   One of the highest paying field industry as of now. Come and join,let the journey begin.
+                               </p>
+                               <a href="#" class="btn btn-primary">START LEARNING</a>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                           <div class="card">
+                               <img src="C:\Users\dell\Desktop\HTML\bootstrap\images\ds.jpg" alt="Web Design" class="card-img-top">
+                               <div class="card-body">
+                                   <h5 class="card-title fs-5 text-danger">DATA SCIENCE</h5>
+                                   <p class="card-text">
+                                       The most future ready field with high paying jobs. Come and join,let the journey begin.
+                                   </p>
+                                   <a href="#" class="btn btn-primary">START LEARNING</a>
+                               </div>
+                           </div>
+                    </div>
+                </div>
+         </div>
+
+         <!------------------- features section ------------------>
+
+         <section class="features">
+                <div class="container">
+                <div class="box-wrapper ">
+                    <div class="box box1">
+                        <i class="fa-solid fa-dragon fa-2x text-red"></i>
+                        <h2 class="md-heading">LEARNING</h2>
+                        <p>Learn and upgrade your skills to match the latest requirements of industry. Make yourself standout among others and reach heights you did'nt imagine possible before.Come and join our course</p>
+                    </div>
+        
+                    <div class="box box2">
+                        <i class="fa-solid fa-feather-pointed fa-2x "></i>
+                        <h2 class="md-heading">LOW PRICED</h2>
+                        <p>We try to provide the best value for money. Our courses comes at chief prices and job gaurantees. You need to pay only after you get a good paying job. Learn the skills now and pay later.</p>
+                    </div>
+        
+                    <div class="box box3">
+                            <i class="fa-brands fa-affiliatetheme fa-2x text-red"></i>
+                            <h2 class="md-heading">EXPERIENCE</h2>
+                            <p>Instead of making dummy projects for your resume,add real life workable projects to add to your portfolio and get the experience to learn and experience your work deeply.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+         <footer class="blog-footer">
+                <p class="fs-4">Blog template built by <a href="https://www.linkedin.com/in/abhishek-das-62401a21b/" target="blank">ABHISHEK</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                <p>
+                  <a class="fs-4" href="#">Back to top</a>
+                </p>
+              </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
